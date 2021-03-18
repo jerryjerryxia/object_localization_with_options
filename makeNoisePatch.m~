@@ -1,0 +1,7 @@
+imOri = imread("wf.png");
+% isolate the face
+imFace = imOri(80:382,97:348,:);
+imScrb = imscramble(imFace);
+% put the face back
+im
+gaussAperture(imScrb,80,'noisePatch.png',512)
